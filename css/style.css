@@ -66,13 +66,12 @@ header {
 
 header .logo {
     height: 19px;
-    padding: 30px 50px;
+    padding: 30px 0;
 }
 
 nav {
     height: 35px;
     width: 244px;
-    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -90,6 +89,134 @@ nav a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
+
+p {
+    font-size: 16px;
+}
+
+/******* section info group ********/
+
+.headline {
+    height: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline p {
+    margin: 0;
+}
+
+.info_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 35px;
+    height: 281px;
+}
+
+.search_bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 50px;
+    width: 377px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px;
+}
+
+.search_bar button {
+    color: #FFF;
+    font-weight: 700;
+    height: 49px;
+    width: 132px;
+    background-color: var(--main-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    padding: 15px 16px;
+    cursor: pointer;
+}
+
+.search_bar_icon {
+    background-color: var(--main-bg-color);
+    width: 50px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search_bar input {
+    border: none;
+    flex-grow: 1;
+}
+
+.search_bar .input_label {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    left: 50px; 
+    top: 0;
+    right: 132px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    pointer-events: none;
+}
+
+.filter_bar {
+    display: flex;
+    width: 758px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter_bar_title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.filter_bar button {
+    font-size: 17px;
+    height: 100%;
+    font-weight: 700;
+    padding: 4px 19px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #d9d9d9;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter_bar button:hover {
+    background-color: #DEEBFF;
+}
+
+.filter_bar button i {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_bar i {
+    width: 24px;
+    height: 24px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
