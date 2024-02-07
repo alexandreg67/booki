@@ -338,6 +338,41 @@ p {
     margin-bottom: 5px;
 }
 
+/********** Activités à Marseille *************/
+
+.activites {
+    padding: 30px;
+}
+
+.activites h3 {
+    padding: 0 20px;
+}
+
+.activites_liste {
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.activites_card {
+    border-radius: 20px;
+    height: 380px;
+    width: 300px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activites_card img {
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+
+/************ Footer ************/
+
 
 
 
