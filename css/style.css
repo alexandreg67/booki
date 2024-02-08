@@ -373,6 +373,28 @@ p {
 
 /************ Footer ************/
 
+footer {
+    display: flex;
+    text-align: left;
+    background-color: #F2F2F2;
+    margin-bottom: 50px;
+}
+
+.APropos {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+}
+
+.APropos ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.APropos li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
 
 
 
