@@ -17,7 +17,7 @@
 <body>
     <div class="main-container">
         <header>
-            <img class="logo" src="./images/logo/Booki.png" alt="">
+            <img class="logo" src="./images/logo/Booki.png" alt="logo du site">
             <nav>
                 <a href="#hebergement">Hébergements</a></li>
                 <a href="#activite">Activités</a></li>
@@ -33,24 +33,39 @@
                 <div class="search_bar_icon">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
-                <input type="text" id="search_bar_input" value="Marseille, France" onclick="this.value=''"/> 
-                <label for="search_bar_input" class="input_label"></label>
-                <button>Rechercher</button>
+                <input 
+                    type="text" 
+                    id="search_bar_input" 
+                    placeholder="Marseille, France"
+                    /> 
+                    <button class="search_bar_button">Rechercher</button>
+                    <button class="search_bar_button_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
+
             <div class="filter_bar">
-                <span class="filter_bar_title">Filtres</span>
-                <button>
-                    <i class="fa-solid fa-money-bill-wave"></i>Économique 
-                </button>
-                <button>
-                    <i class="fa-solid fa-person"></i>Familial
-                </button>
-                <button>
-                    <i class="fa-solid fa-heart"></i>Romantique
-                </button>
-                <button>
-                    <i class="fa-solid fa-fire"></i>Nos pépites
-                </button>
+                <h3 class="filter_bar_title">Filtres</h3>
+                <menu class="filter_bar_menu">
+                    <li>
+                      <button>
+                        <i class="fa-solid fa-money-bill-wave"></i>Économique 
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <i class="fa-solid fa-person"></i>Familial
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <i class="fa-solid fa-heart"></i>Romantique
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <i class="fa-solid fa-fire"></i>Nos pépites
+                      </button>
+                    </li>
+                </menu>
             </div>
 
             <div class="info_bar">   
