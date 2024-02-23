@@ -286,6 +286,7 @@ menu {
 }
 
 .hebergements-cards {
+    box-sizing: border-box;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -612,10 +613,12 @@ footer {
 
     .hebergements-and-populaires section {
         border-radius: 0;
+        padding: 30px 20px;
     }
 
     #hebergement {
         background-color: white;
+        padding-top: 30px;
     }
 
     .hebergements_list {
@@ -640,6 +643,15 @@ footer {
 
     .populaires-cards a {
         width: 100%;
+    }
+
+    .activites_liste {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
     }
 
 }
