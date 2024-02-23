@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -436,13 +436,6 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-
-/* Large Desktop*/
-@media (min-width: 1440px) {
-    .body {
-        margin: 0 auto;
-    }
-}
 
 
 /* Medium devices (tablets, less/equal than 1024px) */
