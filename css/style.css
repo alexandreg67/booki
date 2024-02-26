@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -421,7 +422,7 @@ footer {
 }
 
 .footer_menu {
-    width: 100%;
+    width: calc(100% - 40px);
     padding: 20px 20px 20px 20px;
 }
 
@@ -437,6 +438,12 @@ footer {
 
 /****** Media queries ***********/
 
+@media (max-width: 1345px) {
+    .hebergements_list {
+        justify-content: space-around;
+    }
+}
+
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -451,6 +458,10 @@ footer {
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements_list {
+        justify-content: space-between;
     }
 
     .populaires {
@@ -488,6 +499,14 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         height: 91px;
+    }
+}
+
+/***** *******/
+
+@media (max-width: 910px){
+    .hebergements_list {
+        justify-content: space-around;
     }
 }
 
@@ -587,12 +606,15 @@ footer {
     }
 
     .filter_bar_menu {
-        display: grid;
-        row-gap: 20px;
-        column-gap: 20px;
-        width: 100%;
-        grid-template-rows: 50px 50px;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .filter_bar_menu li {
+        height: 50px;
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
     }
 
     .filter_bar_menu button {
