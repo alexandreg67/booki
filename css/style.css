@@ -255,11 +255,14 @@ menu {
 
 .info_bar_icon {
     display: flex;
+    text-align: center;
+    margin-right: 5px;
 }
 
 .info_bar i {
     width: 24px;
     height: 24px;
+    line-height: 24px;
 }
 
 /****** Hebergements And Populaires ***********/
