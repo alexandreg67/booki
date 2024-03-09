@@ -65,7 +65,6 @@ header {
     display: flex;
     height: 79px;
     justify-content: space-between;
-    margin-top: 2px;
 }
 
 header .logo {
@@ -74,13 +73,12 @@ header .logo {
 }
 
 nav {
-    box-sizing: border-box;
     height: 35px;
     width: 244px;
     display: flex;
     justify-content: space-between;
     align-items: end;
-    border-top: 2px solid transparent;
+    border-top: 0.125em solid transparent;
 }
 
 
@@ -93,7 +91,7 @@ nav a {
 
 nav a:hover {
     color: var(--main-color);
-    border-top: 2px solid var(--main-color);
+    border-top: 0.125em solid var(--main-color);
 }
 
 p {
@@ -108,7 +106,7 @@ menu {
 /******* section info group ********/
 
 .headline {
-    height: 53px;
+    /* height: 53px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -190,7 +188,8 @@ menu {
 
 .filter_bar {
     display: flex;
-    width: 758px;
+    width: 100%;
+    max-width: 758px;
     justify-content: space-between;
 }
 
@@ -284,13 +283,26 @@ menu {
     width: 65%;
 }
 
-.hebergements_list {
+.hebergements_list_1 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hebergements_list_1 a {
+    width: 33.3%;
+}
+
+.hebergements_list_2 {
+    display: flex;
+    gap: 30px;
+}
+
+.hebergements_list_2 a {
+    width: 33.3%;
 }
 
 .hebergements-cards {
+    height: calc(100% - 33px);
     box-sizing: border-box;
     background-color: white;
     border-radius: 20px;
@@ -298,7 +310,6 @@ menu {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     display: flex;
     flex-direction: column;
-    width: 250px;
     margin-top: 33px;
 }
 
@@ -389,24 +400,30 @@ menu {
     padding: 30px;
 }
 
-.activites_card h3 {
-    font-size: 16px;
-    padding: 0 19px;
-    font-weight: 700;
-}
-
 .activites_liste {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
+.activites_liste a {
+    width: calc(25% - 30px);
+}
+
+
 .activites_card {
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     height: 380px;
-    width: 297.5px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activites_card_title {
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .activites_card img {
@@ -417,6 +434,12 @@ menu {
     object-fit: cover;
 }
 
+.activites_card h3 {
+    font-size: 16px;
+    padding: 0 19px;
+    margin: 0;
+    font-weight: 700;
+}
 
 /************ Footer ************/
 
@@ -442,21 +465,6 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-
-@media (max-width: 1360px) {
-    .hebergements_list {
-        justify-content: space-around;
-    }
-
-    .activites_liste {
-        justify-content: space-around;
-    }
-
-    .activites_liste .activites_card {
-        margin-bottom: 30px;
-    }
-}
-
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -504,6 +512,10 @@ footer {
         height: 270px;
     }
 
+    .activites_card_title {
+        height: 70px;
+    }
+
     .activites_card img {
         height: 200px;
     }
@@ -514,15 +526,6 @@ footer {
         height: 91px;
     }
 }
-
-/***** *******/
-
-@media (max-width: 910px){
-    .hebergements_list {
-        justify-content: space-around;
-    }
-}
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -551,7 +554,7 @@ footer {
         height: 35px;
         display: flex;
         align-items: start;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid #F2F2F2;
     }
 
     nav a {
@@ -649,12 +652,18 @@ footer {
         padding-top: 30px;
     }
 
-    .hebergements_list {
+    .hebergements_list_1, .hebergements_list_2 {
         flex-direction: column;
+        gap: 0px;
+    }
+
+    .hebergements_list_1 a, .hebergements_list_2 a {
+        width: 100%;
     }
 
     .hebergements-cards {
         width: 100%;
+        margin-top: 10px;
     }
 
     .populaires {
@@ -669,17 +678,23 @@ footer {
         justify-content: space-between;
     }
 
+    
+    .activites_liste {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    
     .populaires-cards a {
         width: 100%;
     }
-
+    
     .activites_card {
         width: 100%;
     }
 
-    .activites_liste {
-        margin-top: 30px;
-        flex-direction: column;
+    .activites_liste a {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     footer {
